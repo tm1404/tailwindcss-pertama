@@ -13,10 +13,13 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="font-['Lato']">
+  <body class="font-['Lato'] relative">
+    <div
+      class="hiasan-pemanis absolute -z-10 h-[65vh] w-[6rem] sm:w-[10rem] 2xl:w-[15rem] rounded-br-lg bg-gradient-to-b from-[#FFEFEF] to-[#FFD6E1]"
+    ></div>
     <header class="bg-[#FFD4E6]">
       <div
-        class="container flex py-4 w-full justify-between relative sm:static mx-auto sm:px-0 px-4"
+        class="container mx-auto sm:px-0 px-4 flex py-4 w-full justify-between relative sm:static"
       >
         <div class="logo pointer-events-none">
           <h1 class="text-[1.25rem] text-bold text-[#00336D]">Sepatu</h1>
@@ -24,7 +27,11 @@
         <nav
           class="menu-responsif hidden sm:static sm:block absolute right-0 top-[4rem] w-full sm:w-auto py-4 sm:py-0 bg-[#92C1FF] sm:bg-[#FFD4E6] text-center sm:text-[1.1rem]"
         >
-          <a href="#">Tutorial</a>
+          <div
+            class="relative sm:before:block sm:before:absolute sm:before:w-[3px] sm:before:hover:h-7 sm:before:duration-1000 sm:before:-left-2 sm:before:-top-[1px] sm:before:bg-[#FF006B]"
+          >
+            <a href="#">Tutorial</a>
+          </div>
         </nav>
         <svg
           viewBox="0 0 100 80"
@@ -38,21 +45,26 @@
         </svg>
       </div>
     </header>
-    <div class="container mx-auto px-4 sm:p-0">
+    <div class="container mx-auto px-4 sm:p-0 flex justify-between sm:relative">
       <section class="h-[80vh] flex items-center">
         <div class="judul-hero">
-          <h1 class="text-[2.2rem] w-[18ch] font-bold">
+          <h1 class="text-[2rem] md:text-[3rem] w-[18ch] font-bold">
             Mata Kaki Juga Perlu Lihat yang Cantik
           </h1>
-          <p class="block pt-1 pb-2 text-slate-400 text-lg">
+          <p class="block pt-1 pb-2 text-[#929292] text-lg md:text-xl">
             Biar menarik untuk diinjak
           </p>
           <button
-            class="py-2 px-4 bg-[#055A80] rounded mt-4 text-white hover:bg-[#1876a1]"
+            class="py-2 px-4 bg-[#055A80] rounded mt-4 md:py-3 md:px-5 md:mt-6 text-white hover:bg-[#1876a1]"
           >
             <a href="#">Lihat di Sini</a>
           </button>
         </div>
+      </section>
+      <section
+        class="img-hiasan hidden sm:block sm:relative sm:top-[4.5rem] md:right-[2rem] sm:before:absolute sm:before:block sm:before:rounded-t-lg sm:before:-z-10 sm:before:bottom-1 sm:before:-right-6 sm:before:w-[25rem] sm:before:h-[50vh] sm:before:bg-gradient-to-b sm:before:from-[#D6ECFF] sm:before:to-[#92C1FF]"
+      >
+        <img src="../assets/imghero.png" alt="imghero" />
       </section>
     </div>
 
