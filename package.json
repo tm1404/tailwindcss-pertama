@@ -4,7 +4,7 @@
   "description": "Sepatu murah untuk lebaran bergaransi promo gratis ongkir",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i tailwind.css -o _dist/style.css -w"
+    "dev": "npx tailwindcss -i tailwind.css -o _site/style.css -w"
   },
   "keywords": [
     "sepatu",
@@ -21,7 +21,6 @@
   "author": "Muhammad Taufik",
   "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.3.1",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.6",
     "postcss-import": "^14.0.2",
